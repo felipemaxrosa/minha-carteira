@@ -1,7 +1,16 @@
-import './styles.scss';
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import GlobalStyles from "./styles/GlobalStyles";
+import Layout from "./components/Layout";
+import { dark } from './styles/themes';
 
 const App = () => {
-  return <h1>Dashboard</h1>;
+  return (
+    <ThemeProvider theme={dark}>
+      <GlobalStyles />
+      <Layout />
+    </ThemeProvider>
+  );
 };
 
 export default App;
