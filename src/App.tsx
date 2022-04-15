@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import GlobalStyles from "./styles/GlobalStyles";
-import Layout from "./components/Layout";
+import GlobalStyles from './styles/GlobalStyles';
+import Layout from './components/Layout';
 import { dark } from './styles/themes';
 
 const App = () => {
